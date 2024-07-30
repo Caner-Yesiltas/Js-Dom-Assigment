@@ -7,7 +7,7 @@ newHeader2.style.padding = "1.2rem";
 let newTitle = document.getElementById("title");
 
 newTitle.textContent = "Javascript Dom Assignment 1";
-newTitle.style.fontStyle="italic"
+newTitle.style.fontStyle = "italic";
 
 let navItem2 = document.querySelector(".nav-item");
 
@@ -46,6 +46,22 @@ newButton.style.cursor = "pointer";
 newButton.style.border = "none";
 newButton.textContent = "Dark Side";
 
+let newProjects = document.getElementById("projects");
 
+newProjects.firstElementChild.textContent = "~Js Dom Projects~";
+newProjects.firstElementChild.style.fontStyle = "italic";
 
+let projectList = newProjects.lastElementChild;
+newProjects.firstElementChild.style.color = "red";
+newProjects.firstElementChild.style.marginBottom = "1rem";
 
+const myProjects = [
+  "Hello World!",
+  "Guess Number",
+  "Checkout Page",
+  "Gelir-Gider Projesi",
+  "Api Projects",
+];
+projectList.innerHTML = myProjects
+  .map((project) => `<li>${project}</li>`)
+  .join("");
