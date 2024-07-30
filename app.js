@@ -62,6 +62,7 @@ const myProjects = [
   "Gelir-Gider Projesi",
   "Api Projects",
 ];
+
 projectList.innerHTML = myProjects
   .map((project) => `<li>${project}</li>`)
-  .join("");
+  .join(""); //elemanlari birlestirir ,"" kaldirir string haline donusturur.
